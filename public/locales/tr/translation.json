@@ -1,0 +1,41 @@
+{
+  "navbar": {
+    "payment": "Ödeme",
+    "login": "Giriş Yap",
+    "logout": "Çıkış Yap"
+  },
+
+  "comingSoon": {
+    "coming soon": "Çok Yakında",
+    "working hard": "Bu özelliği size sunmak için çok çalışıyoruz. Takipte kalın!"
+  },
+
+  "login": {
+    "login": "Giriş Yap",
+    "loading": "Yükleniyor",
+    "email": "E-posta",
+    "Enter your email": "E-postanızı girin",
+    "password": "Şifre",
+    "Enter your password": "Şifrenizi girin",
+    "hide": "Gizle",
+    "show": "Göster",
+    "logging": "Giriş yapılıyor..."
+  },
+
+  "home": {
+    "home": "Kütüphanemize Hoş Geldiniz",
+    "welcomeMessage": "Bilgi ve gelişimin kapısı.",
+    "exploreButton": "Hemen Keşfet",
+    "featuresTitle": "Neden Bizi Seçmelisiniz?",
+    "feature1Title": "Seçilmiş Kitaplar",
+    "feature1Desc": "İlgi alanlarınıza uygun, özenle seçilmiş kitaplar sunuyoruz.",
+    "feature2Title": "Uygun Fiyatlar",
+    "feature2Desc": "Bütçenize uygun yüksek kaliteli içerikler.",
+    "feature3Title": "Hızlı Teslimat",
+    "feature3Desc": "Kitaplarınızı hızlı ve sorunsuz bir şekilde teslim ediyoruz."
+  },
+
+  "footer": {
+    "footer": "Tüm hakları saklıdır."
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "navbar": {
+    "payment": "Payment",
+    "login": "Login",
+    "logout": "Logout"
+  },
+
+  "comingSoon": {
+    "coming soon": "Coming Soon",
+    "working hard": "We're working hard to bring you this feature. Stay tuned!"
+  },
+
+  "login": {
+    "login": "Login",
+    "loading": "Loading",
+    "email": "Email",
+    "Enter your email": "Enter your email",
+    "password": "Password",
+    "Enter your password": "Enter your password",
+    "hide": "Hide",
+    "show": "Show",
+    "logging": "Logging in..."
+  },
+
+  "home": {
+    "home": "Welcome to Our Library",
+    "welcomeMessage": "Your gateway to knowledge and growth.",
+    "exploreButton": "Explore Now",
+    "featuresTitle": "Why Choose Us?",
+    "feature1Title": "Curated Books",
+    "feature1Desc": "We offer a wide range of hand-picked books tailored to your interests.",
+    "feature2Title": "Affordable Prices",
+    "feature2Desc": "High-quality content at prices that suit your budget.",
+    "feature3Title": "Fast Delivery",
+    "feature3Desc": "Receive your books quickly and efficiently, wherever you are."
+  },
+
+  "footer": {
+    "footer": "All rights reserved."
+  }
+}
