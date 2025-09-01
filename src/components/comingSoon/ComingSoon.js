@@ -7,7 +7,7 @@ function ComingSoon() {
   const { t } = useTranslation();
 
   return (
-    <div className="app-container-coming-soon">
+    <div className="coming-soon-container">
       <div className="coming-soon">
         <h1>{t("comingSoon.coming soon")}</h1>
         <p>{t("comingSoon.working hard")}</p>

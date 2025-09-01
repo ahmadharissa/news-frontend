@@ -1,7 +1,7 @@
 {
   "navbar": {
     "payment": "الدفع",
-    "login": "تسجيل الدخول",
+    "login or register": "تسجيل الدخول أو التسجيل",
     "logout": "تسجيل الخروج"
   },
 
@@ -19,7 +19,31 @@
     "Enter your password": "أدخل كلمة المرور",
     "hide": "إخفاء",
     "show": "إظهار",
-    "logging": "جارٍ تسجيل الدخول..."
+    "logging": "جارٍ تسجيل الدخول...",
+    "register": "التسجيل"
+  },
+
+  "register": {
+    "register": "تسجيل",
+    "loading": "جارٍ التحميل",
+    "profileImage": "صورة الملف الشخصي",
+    "fullName": "الاسم الكامل",
+    "phoneNumber": "رقم الهاتف",
+    "gender": "الجنس",
+    "select": "اختر",
+    "male": "ذكر",
+    "female": "أنثى",
+    "dateOfBirthday": "تاريخ الميلاد",
+    "location": "الموقع",
+    "email": "البريد الإلكتروني",
+    "Enter your email": "ادخل بريدك الالكتروني",
+    "password": "كلمة المرور",
+    "Enter your password": "ادخل كلمة المرور",
+    "hide": "إخفاء",
+    "show": "إظهار",
+    "repeatPassword": "إعادة كلمة المرور",
+    "passwordMismatch": "كلمتا المرور غير متطابقتين",
+    "registering": "جارٍ التسجيل..."
   },
 
   "home": {

@@ -1,4 +1,4 @@
-.login-container {
+.register-container {
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -7,40 +7,41 @@
   padding: 20px;
 }
 
-.login-container .login-card {
+.register-container .register-card {
   background-color: #fff;
   padding: 30px 40px;
   border-radius: 10px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   width: 100%;
-  max-width: 400px;
+  max-width: 450px; /* Slightly wider than login for extra fields */
 }
 
-.login-container .login-title {
+.register-container .register-title {
   text-align: center;
   margin-bottom: 25px;
   font-size: 24px;
   color: #333;
 }
 
-.login-container .login-form {
+.register-container .register-form {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 18px;
 }
 
-.form-group {
+.register-container .form-group {
   display: flex;
   flex-direction: column;
 }
 
-.login-container .form-group label {
+.register-container .form-group label {
   margin-bottom: 6px;
   font-weight: 500;
   color: #555;
 }
 
-.login-container .form-group input {
+.register-container .form-group input,
+.register-container .form-group select {
   padding: 10px 12px;
   border: 1px solid #ccc;
   border-radius: 6px;
@@ -49,20 +50,21 @@
   transition: border 0.3s;
 }
 
-.login-container .form-group input:focus {
+.register-container .form-group input:focus,
+.register-container .form-group select:focus {
   border-color: #007bff;
 }
 
-.login-container .password-wrapper {
+.register-container .password-wrapper {
   position: relative;
 }
 
-.login-container .password-wrapper input {
+.register-container .password-wrapper input {
   width: 100%;
   padding-right: 70px;
 }
 
-.login-container .toggle-password {
+.register-container .toggle-password {
   position: absolute;
   right: 10px;
   top: 50%;
@@ -73,7 +75,7 @@
   user-select: none;
 }
 
-.login-container button[type="submit"] {
+.register-container button[type="submit"] {
   background-color: #007bff;
   color: white;
   border: none;
@@ -84,19 +86,17 @@
   transition: background-color 0.3s;
 }
 
-.login-container button[type="submit"]:hover {
+.register-container button[type="submit"]:hover {
   background-color: #0056b3;
 }
 
-.login-container button[disabled] {
+.register-container button[disabled] {
   background-color: #7da8d6;
   cursor: not-allowed;
 }
 
-.login-container .login-error,
-.login-container .login-loading {
-  background-color: #ffe0e0;
-  color: red;
+.register-container .register-error,
+.register-container .register-loading {
   padding: 10px;
   margin-bottom: 10px;
   border-radius: 5px;
@@ -104,7 +104,18 @@
   text-align: center;
 }
 
-.login-container .login-loading {
+.register-container .register-error {
+  background-color: #ffe0e0;
+  color: red;
+}
+
+.register-container .register-loading {
+  background-color: #e6f4ea;
   color: green;
-  background-color: #61c761;
+}
+
+.register-container .error-message {
+  font-size: 13px;
+  color: red;
+  margin-top: -10px;
 }

@@ -32,7 +32,6 @@ const LanguageSwitcher = () => {
         onChange={(e) => changeLanguage(e.target.value)}
       >
         <option value="en">English</option>
-        <option value="tr">Türkçe</option>
         <option value="ar">العربية</option>
       </select>
     </div>

@@ -22,11 +22,67 @@ export const signin = (email, password) => async (dispatch) => {
   }
 };
 
-export const signout = () => async (dispatch) => {
+export const signup = (imgUrl, password, fullName, phoneNumber, gender, dateOfBirthday, locationId, email) => async (dispatch) => {
+    try {
+      dispatch(AuthAction.loginRequest());
+
+      const formData = new FormData();
+      if (imgUrl) {
+        formData.append("imgUrl", imgUrl);
+      }
+      formData.append("email", email);
+      formData.append("fullName", fullName);
+      formData.append("phoneNumber", phoneNumber);
+      formData.append("gender", gender);
+      formData.append("dateOfBirthday", dateOfBirthday);
+      formData.append("locationId", locationId);
+      formData.append("password", password);
+
+      const user = await axios.post(
+        process.env.REACT_APP_API + "/register",
+        formData,
+        {
+          headers: {
+            "Content-Type": "multipart/form-data",
+          },
+        }
+      );
+
+      window.location.href = "/login";
+      dispatch(AuthAction.loginSuccess(user.data));
+    } catch (error) {
+      dispatch(
+        AuthAction.loginFailure(
+          error.response?.data?.message || "Signup failed"
+        )
+      );
+    }
+};
+
+export const signout = () => async () => {
   localStorage.removeItem("id");
   localStorage.removeItem("jwtToken");
   localStorage.removeItem("email");
   localStorage.removeItem("role");
   setAuthToken(false);
   window.location.href = "/login";
+};
+
+export const forgotPassword = (email) => async () => {
+  try {
+    await axios.post(process.env.REACT_APP_API + "/forgetPassword", { email });
+  } catch (error) {
+    alert(error);
+  }
+};
+
+export const resetPassword = (oldPassword, newPassword) => async () => {
+  try {
+    await axios.post(process.env.REACT_APP_API + "/changePassword", {
+      oldPassword,
+      newPassword,
+    });
+  } catch (error) {
+    alert(error);
+  }
 };

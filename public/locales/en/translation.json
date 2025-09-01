@@ -1,7 +1,7 @@
 {
   "navbar": {
     "payment": "Payment",
-    "login": "Login",
+    "login or register": "Login or Register",
     "logout": "Logout"
   },
 
@@ -19,7 +19,31 @@
     "Enter your password": "Enter your password",
     "hide": "Hide",
     "show": "Show",
-    "logging": "Logging in..."
+    "logging": "Logging in...",
+    "register": "Register"
+  },
+
+  "register": {
+    "register": "Register",
+    "loading": "Loading",
+    "profileImage": "Profile Image",
+    "fullName": "Full Name",
+    "phoneNumber": "Phone Number",
+    "gender": "Gender",
+    "select": "Select",
+    "male": "Male",
+    "female": "Female",
+    "dateOfBirthday": "Date of Birthday",
+    "location": "Location",
+    "email": "Email",
+    "Enter your email": "Enter your email",
+    "password": "Password",
+    "Enter your password": "Enter your password",
+    "hide": "Hide",
+    "show": "Show",
+    "repeatPassword": "Repeat Password",
+    "passwordMismatch": "Passwords do not match",
+    "registering": "Registering..."
   },
 
   "home": {

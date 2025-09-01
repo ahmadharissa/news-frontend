@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 // Redux
@@ -40,7 +40,9 @@ const Login = () => {
         <h2 className="login-title">{t("login.login")}</h2>
 
         {error && <div className="login-error">{error}</div>}
-        {loading && <div className="login-loading">{t("login.loading")}...</div>}
+        {loading && (
+          <div className="login-loading">{t("login.loading")}...</div>
+        )}
 
         <form onSubmit={handleSignin} className="login-form">
           <div className="form-group">
@@ -74,7 +76,12 @@ const Login = () => {
               </span>
             </div>
           </div>
-
+          <Link
+            to="/register"
+            style={{ textDecoration: "none", color: "blue", textAlign: "center" }}
+          >
+            {t("login.register")}
+          </Link>
           <button type="submit" disabled={loading}>
             {loading ? t("login.logging") : t("login.login")}
           </button>

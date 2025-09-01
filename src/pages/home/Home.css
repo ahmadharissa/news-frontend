@@ -15,26 +15,26 @@
 }
 
 /* Hero Section */
-.hero {
+.home-container .hero {
   background: linear-gradient(to right, #4facfe, #00f2fe);
   padding: 100px 20px;
   text-align: center;
   color: white;
 }
 
-.hero-title {
+.home-container .hero-title {
   font-size: 3rem;
   margin-bottom: 20px;
 }
 
-.hero-subtitle {
+.home-container .hero-subtitle {
   font-size: 1.25rem;
   margin-bottom: 30px;
   max-width: 600px;
   margin-inline: auto;
 }
 
-.hero-button {
+.home-container .hero-button {
   background-color: white;
   color: #0077cc;
   border: none;
@@ -45,24 +45,24 @@
   transition: background-color 0.3s ease;
 }
 
-.hero-button:hover {
+.home-container .hero-button:hover {
   background-color: #e0e0e0;
 }
 
 /* Features Section */
-.features {
+.home-container .features {
   padding: 60px 20px;
   text-align: center;
   background-color: #fff;
 }
 
-.features h2 {
+.home-container .features h2 {
   font-size: 2rem;
   margin-bottom: 40px;
   color: #333;
 }
 
-.features-grid {
+.home-container .features-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 30px;
@@ -70,7 +70,7 @@
   margin: 0 auto;
 }
 
-.feature-card {
+.home-container .feature-card {
   background-color: #f9f9f9;
   padding: 25px;
   border-radius: 12px;
@@ -78,17 +78,17 @@
   transition: transform 0.3s ease;
 }
 
-.feature-card:hover {
+.home-container .feature-card:hover {
   transform: translateY(-5px);
 }
 
-.feature-card h3 {
+.home-container .feature-card h3 {
   font-size: 1.2rem;
   margin-bottom: 10px;
   color: #0077cc;
 }
 
-.feature-card p {
+.home-container .feature-card p {
   font-size: 0.95rem;
   color: #555;
 }
