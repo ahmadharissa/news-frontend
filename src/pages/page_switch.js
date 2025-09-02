@@ -4,8 +4,9 @@ import { useDispatch } from "react-redux";
 
 // Pages
 import Home from "./home/Home.js";
-import Login from "./login/Login.js";
-import Register from "./register/Register.js";
+import Login from "./auth/login/Login.js";
+import Register from "./auth/register/Register.js";
+import ForgetPassword from "./auth/forgetPassword/ForgetPassword.js";
 
 // Components
 import Navbar from "../components/header/Navbar.js";
@@ -36,6 +37,7 @@ function PageSwitch() {
         <Route path="/home" element={<Home />} />
         <Route path="/login" element={<Login /> } />
         <Route path="/register" element={<Register />} />
+        <Route path="/forgetPassword" element={<ForgetPassword />} />
         <Route
           path="/payment"
           element={<PrivateRoute authenticated={authenticated} element={<ComingSoon />} />}

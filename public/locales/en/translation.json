@@ -20,7 +20,8 @@
     "hide": "Hide",
     "show": "Show",
     "logging": "Logging in...",
-    "register": "Register"
+    "register": "Register",
+    "forgetPassword": "Forget Password?"
   },
 
   "register": {
@@ -57,6 +58,13 @@
     "feature2Desc": "High-quality content at prices that suit your budget.",
     "feature3Title": "Fast Delivery",
     "feature3Desc": "Receive your books quickly and efficiently, wherever you are."
+  },
+
+  "forgotPassword": {
+    "forgotPassword": "Forgot Password",
+    "email": "Email",
+    "Enter your email": "Enter your email",
+    "submit": "Submit"
   },
 
   "footer": {

@@ -20,7 +20,8 @@
     "hide": "إخفاء",
     "show": "إظهار",
     "logging": "جارٍ تسجيل الدخول...",
-    "register": "التسجيل"
+    "register": "التسجيل",
+    "forgetPassword": "نسيت كلمة المرور"
   },
 
   "register": {
@@ -57,6 +58,13 @@
     "feature2Desc": "محتوى عالي الجودة بأسعار مناسبة للجميع.",
     "feature3Title": "توصيل سريع",
     "feature3Desc": "نوصّل كتبك بسرعة وكفاءة إلى أي مكان."
+  },
+
+  "forgotPassword": {
+    "forgotPassword": "نسيت كلمة المرور",
+    "email": "البريد الإلكتروني",
+    "Enter your email": "ادخل بريدك الالكتروني",
+    "submit": "أرسل"
   },
 
   "footer": {

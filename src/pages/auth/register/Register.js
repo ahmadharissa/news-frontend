@@ -5,11 +5,11 @@ import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 // Redux
-import { signup } from "../../redux/auth/authAction";
-import { getLocations } from "../../redux/location/locationAction";
+import { signup } from "../../../redux/auth/authAction";
+import { getLocations } from "../../../redux/location/locationAction";
 
 // Utils
-import isAuth from "../../Utils/isAuth";
+import isAuth from "../../../Utils/isAuth";
 
 // Styles
 import "./Register.css";
@@ -46,18 +46,17 @@ const Register = () => {
 
   const handleSignUp = (e) => {
     e.preventDefault();
-    dispatch(
-      signup(
-        imgUrl,
-        password,
-        fullName,
-        phoneNumber,
-        gender,
-        dateOfBirthday,
-        locationId,
-        email
-      )
-    );
+    const data = {
+      imgUrl,
+      password,
+      fullName,
+      phoneNumber,
+      gender,
+      dateOfBirthday,
+      locationId,
+      email,
+    };
+    dispatch(signup(data));
   };
 
   return (
@@ -135,9 +134,11 @@ const Register = () => {
               <option value="" disabled>
                 {t("register.select")}
               </option>
-              { locations?.data?.map((location) => (
+              {locations?.data?.map((location) => (
                 <option key={location.id} value={location.id}>
-                  { (localStorage.getItem("selectedLanguage") === "en") ? location.nameEn : location.nameEn }
+                  {localStorage.getItem("selectedLanguage") === "en"
+                    ? location.nameEn
+                    : location.nameEn}
                 </option>
               ))}
             </select>
